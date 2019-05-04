@@ -27,7 +27,7 @@
 
 # BuiLogs (Build Blogs aka a log for things that I built)
 
-## Airflow log bot;
+## Airflow log bot
 1. Configure airflow to send logs to gs bucket;
 2. Set up Cloud Function triggered by storage bucket;
 3. Write json transformation in the Cloud Function:
@@ -38,7 +38,7 @@
         4) Convert timestamps to PST.
 4. Send payload to Slack incoming webhook. 
 
-## Dockerize churn model: 
+## Dockerize churn model
 1. Choose base image: google/cloud-sdk with Python3.5 & Python2
 2. (How I found out this image is using only Python3.5): `f` formatted strings are not being recognized in this environment.
 3. Dataproc API is _very_ cool.
